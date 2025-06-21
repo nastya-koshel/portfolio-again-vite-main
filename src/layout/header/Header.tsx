@@ -15,5 +15,5 @@ export const Header = () => {
 }
 
 export const StyledHeader = styled.header`
-    background-color: rgba(15, 191, 97, 0.1);
+    background-color: #0FBF611A;
 `

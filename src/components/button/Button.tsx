@@ -10,7 +10,7 @@ export const Button = (props:ButtonPropsType) => {
 }
 
 const StyledButton = styled.button`
-    background-color: rgba(15, 191, 97, 1);
+    background-color: #0FBF61;
     border-radius: 50px;
     border: none;
 `

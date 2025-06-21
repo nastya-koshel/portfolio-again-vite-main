@@ -9,7 +9,7 @@ export const Main = () => {
             <FlexWrapper alignItems="center">
                 <FlexWrapper direction="column" >
                     <p>Hello, I’m</p>
-                    <h2>Fabio Scaletta</h2>
+                    <h1>Fabio Scaletta</h1>
                     <p>I’m a UX/UI designer and Front End Developer based in Kuala Lumpur, Malaysia! 🇲🇾. I love designing, coding, creating and building stuff.</p>
                     <FlexWrapper>
                         <Button text="Send Email" />
@@ -22,5 +22,6 @@ export const Main = () => {
 }
 
 const StyledMain = styled.main`
-    background-color: rgba(15, 191, 97, 0.1);
-    `
+    //background-color: #0FBF611A;
+    background-color: rgba(211, 169, 169, 0.53);
+`

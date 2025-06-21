@@ -11,7 +11,7 @@ export const SectionTitle = (props:StyledSectionTitleType) => {
 }
 
 const StyledSectionTitle = styled.h2`
-    color: rgba(15, 191, 97, 1);
+    color: #0FBF61;
     font-size: 40px;
     text-align: center;
 `
