@@ -1,16 +1,17 @@
 import './App.css'
 import {Header} from "./layout/header/Header.tsx";
 import {Main} from "./layout/sections/main/Main.tsx";
-import {Services} from "./layout/sections/services/Services.tsx";
+import {AboutMe} from "./layout/sections/aboutMe/AboutMe.tsx";
 
 function App() {
-  return (
-      <div className="App">
-        <Header />
-        <Main />
-        <Services />
-      </div>
-  )
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+            <AboutMe/>
+            {/*<Portfolio />*/}
+        </div>
+    )
 }
 
 export default App

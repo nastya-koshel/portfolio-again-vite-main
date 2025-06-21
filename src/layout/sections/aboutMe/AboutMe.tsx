@@ -3,9 +3,9 @@ import {SectionTitle} from "../../../components/SectionTitle.tsx";
 import styled from "styled-components";
 import image from '../../../assets/images/My-photo-about-me.webp'
 
-export const Services = () => {
+export const AboutMe = () => {
     return (
-        <>
+        <StyledAboutMe>
             <SectionTitle title="About Me"/>
             <FlexWrapper >
                 <img src={image} alt="My photo"/>
@@ -29,9 +29,13 @@ export const Services = () => {
                     </StyledList>
                 </FlexWrapper>
             </FlexWrapper>
-        </>
+        </StyledAboutMe>
     )
 }
+
+const StyledAboutMe = styled.div`
+    background-color: antiquewhite;
+`
 
 const StyledHighlighting = styled.span`
     color: rgba(15, 191, 97, 1);
