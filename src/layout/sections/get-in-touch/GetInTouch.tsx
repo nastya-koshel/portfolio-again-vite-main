@@ -24,5 +24,5 @@ const StyledGetInTouch = styled.div`
     height: 250px;
     width: 1116px;
 
-
+    margin: auto;
 `
