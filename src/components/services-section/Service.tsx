@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import image from "../assets/images/icons-sprite.svg"
-import {FlexWrapper} from "./FlexWrapper.tsx";
+import image from "../../assets/images/icons-sprite.svg"
+import {FlexWrapper} from "../FlexWrapper.tsx";
 
-type ServicePropsType = {
-    text?: string;
+export type ServicePropsType = {
+    title?: string;
     number?: string;
     color?: string;
     img?: string;
@@ -22,7 +22,7 @@ export const Service = (props: ServicePropsType) => {
                 </FlexWrapper>
                 <FlexWrapper direction="column" justifyContent="center" >
                     <p>{props.number}</p>
-                    <p>{props.text}</p>
+                    <p>{props.title}</p>
                 </FlexWrapper>
             </FlexWrapper>
         </StyledService>
