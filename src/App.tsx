@@ -4,6 +4,7 @@ import {Main} from "./layout/sections/main/Main.tsx";
 import {AboutMe} from "./layout/sections/about-me/AboutMe.tsx";
 import {Services} from "./layout/sections/services/Services.tsx";
 import {Portfolio} from "./layout/sections/portfolio/Portfolio.tsx";
+import {GetInTouch} from "./layout/sections/get-in-touch/GetInTouch.tsx";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <AboutMe/>
             <Services />
             <Portfolio />
+            <GetInTouch />
         </div>
     )
 }
