@@ -29,17 +29,17 @@ export const Portfolio = () => {
                 </FlexWrapper>
             </StyledMenu>
             <FlexWrapper justifyContent="center" wrap="wrap">
-                <img src={Portfolio1}></img>
-                <img src={Portfolio2}></img>
-                <img src={Portfolio3}></img>
-                <img src={Portfolio4}></img>
+                <img src={Portfolio1} alt="My first web-site"></img>
+                <img src={Portfolio2} alt="My second web-site"></img>
+                <img src={Portfolio3} alt="My third web-site"></img>
+                <img src={Portfolio4} alt="My fourst web-site"></img>
             </FlexWrapper>
             <Button text="See More" />
         </StyledPortfolio>
     )
 }
 
-const StyledPortfolio = styled.div`
+const StyledPortfolio = styled.section`
     background-color: #c4e0ea;
 `
 

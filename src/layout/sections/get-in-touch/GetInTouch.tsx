@@ -5,7 +5,7 @@ export const GetInTouch = () => {
     return (
         <StyledGetInTouch>
             <FlexWrapper direction="column">
-                <h2>Have any project in mind?</h2>
+                <h3>Have any project in mind?</h3>
                 <p>Let’s work together and I will help you by all my best.</p>
             </FlexWrapper>
             <button>Let's talk</button>
@@ -13,7 +13,7 @@ export const GetInTouch = () => {
     )
 }
 
-const StyledGetInTouch = styled.div`
+const StyledGetInTouch = styled.section`
     background-color: #0FBF61;
     border-radius: 15px;
     display: flex;

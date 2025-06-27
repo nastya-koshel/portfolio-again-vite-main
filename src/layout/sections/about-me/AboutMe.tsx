@@ -33,12 +33,12 @@ export const AboutMe = () => {
     )
 }
 
-const StyledAboutMe = styled.div`
+const StyledAboutMe = styled.section`
     background-color: antiquewhite;
 `
 
 const StyledHighlighting = styled.span`
-    color: rgba(15, 191, 97, 1);
+    color: #0FBF61FF;
 `
 const StyledList = styled.ul`
 `

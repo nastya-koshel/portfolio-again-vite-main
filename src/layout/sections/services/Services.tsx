@@ -26,6 +26,6 @@ export const Services = () => {
     )
 }
 
-const StyledServices = styled.div`
+const StyledServices = styled.section`
     background-color: #f6d6fd;
 `

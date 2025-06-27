@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../styles/Theme.tsx";
 
 type StyledSectionTitleType = {
     title: string;
@@ -11,7 +12,7 @@ export const SectionTitle = (props:StyledSectionTitleType) => {
 }
 
 const StyledSectionTitle = styled.h2`
-    color: #0FBF61;
+    color: ${theme.colors.secondary};
     font-size: 40px;
     text-align: center;
 `
