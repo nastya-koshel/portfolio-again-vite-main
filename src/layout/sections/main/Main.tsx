@@ -9,8 +9,8 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper alignItems="center">
-                    <FlexWrapper direction="column">
+                <FlexWrapper justifyContent="space-between" alignItems="center">
+                    <Box>
                         <Greeting>Hello, I’m</Greeting>
                         <Name>Fabio Scaletta</Name>
                         <Text>I’m a UX/UI designer and Front End Developer based in Kuala Lumpur, Malaysia! 🇲🇾. I love
@@ -18,7 +18,7 @@ export const Main = () => {
                         <FlexWrapper>
                             <Button text="Send Email"/>
                         </FlexWrapper>
-                    </FlexWrapper>
+                    </Box>
                     <MainPhoto src={image} alt={"My photo"}/>
                 </FlexWrapper>
             </Container>
@@ -31,6 +31,14 @@ const StyledMain = styled.main`
     min-height: 530px;
     display: flex;
     align-items: center;
+    
+    margin-bottom: 140px;
+`
+
+const Box = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 475px;
 `
 
 const Greeting = styled.p`
