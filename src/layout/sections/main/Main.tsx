@@ -3,6 +3,7 @@ import image from "../../../assets/images/My-photo-main.webp";
 import {Button} from "../../../components/button/Button.tsx";
 import styled from "styled-components";
 import {Container} from "../../../components/Container.tsx";
+import {theme} from "../../../styles/Theme.tsx";
 
 export const Main = () => {
     return (
@@ -10,15 +11,15 @@ export const Main = () => {
             <Container>
                 <FlexWrapper alignItems="center">
                     <FlexWrapper direction="column">
-                        <p>Hello, I’m</p>
-                        <h1>Fabio Scaletta</h1>
-                        <p>I’m a UX/UI designer and Front End Developer based in Kuala Lumpur, Malaysia! 🇲🇾. I love
-                            designing, coding, creating and building stuff.</p>
+                        <Greeting>Hello, I’m</Greeting>
+                        <Name>Fabio Scaletta</Name>
+                        <Text>I’m a UX/UI designer and Front End Developer based in Kuala Lumpur, Malaysia! 🇲🇾. I love
+                            designing, coding, creating and building stuff.</Text>
                         <FlexWrapper>
                             <Button text="Send Email"/>
                         </FlexWrapper>
                     </FlexWrapper>
-                    <img src={image} alt={"My photo"}/>
+                    <MainPhoto src={image} alt={"My photo"}/>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -26,6 +27,26 @@ export const Main = () => {
 }
 
 const StyledMain = styled.main`
-    //background-color: #0FBF611A;
-    background-color: rgba(211, 169, 169, 0.53);
+    background-color: ${theme.colors.primary};
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+`
+
+const Greeting = styled.p`
+    color: ${theme.colors.secondary};
+    font-size: 30px;
+`
+const Name = styled.h1`
+    font-family: Poppins, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+`
+
+const Text = styled.p`
+    margin-bottom: 30px;
+`
+
+const MainPhoto = styled.img`
+    max-height: 390px;
 `

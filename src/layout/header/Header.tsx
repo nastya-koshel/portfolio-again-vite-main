@@ -9,7 +9,7 @@ export const Header = () => {
   return (
       <StyledHeader>
           <Container>
-              <FlexWrapper justifyContent="space-between" alignItems="center" >
+              <FlexWrapper justifyContent="space-between" alignItems="center">
                   <Logo/>
                   <Menu />
               </FlexWrapper>
@@ -20,4 +20,7 @@ export const Header = () => {
 
 export const StyledHeader = styled.header`
     background-color: ${theme.colors.primary};
+    min-height: 100px;
+    display: flex;
+    align-items: center;
 `

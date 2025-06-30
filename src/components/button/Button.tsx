@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {theme} from "../../styles/Theme.tsx";
 
 type ButtonPropsType = {
     text: string;
@@ -10,7 +11,12 @@ export const Button = (props:ButtonPropsType) => {
 }
 
 const StyledButton = styled.button`
-    background-color: #0FBF61;
+    background-color: ${theme.colors.secondary};
     border-radius: 50px;
     border: none;
+    min-height: 54px;
+    padding: 0 40px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
 `
