@@ -45,6 +45,7 @@ export const AboutMe = () => {
 
 const StyledAboutMe = styled.section`
     //max-height: 570px;
+    margin-bottom: 140px;
 `
 
 const Box = styled.div`
