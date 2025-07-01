@@ -19,7 +19,7 @@ export const Main = () => {
                             <Button text="Send Email"/>
                         </FlexWrapper>
                     </Box>
-                    <MainPhoto src={image} alt={"My photo"}/>
+                    <MainImg src={image} alt={"My photo"}/>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -53,8 +53,9 @@ const Name = styled.h1`
 
 const Text = styled.p`
     margin-bottom: 30px;
+    color: ${theme.colors.fontText};
 `
 
-const MainPhoto = styled.img`
+const MainImg = styled.img`
     max-height: 390px;
 `

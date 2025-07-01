@@ -44,4 +44,5 @@ const Circle = styled.div<CirclePropsType>`
     right: ${(props) => props.right};
     left: ${(props) => props.left};
     top: ${(props) => props.top};
+    z-index: -1;
 `

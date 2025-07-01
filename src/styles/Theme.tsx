@@ -4,6 +4,7 @@ export const theme = {
         secondary: "rgba(15, 191, 97, 1)",
 
         fontBlack: "#000000",
-        fontWhite: "#ffffff"
+        fontWhite: "#ffffff",
+        fontText: "#494949",
     }
 }
