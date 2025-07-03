@@ -38,7 +38,6 @@ export const AboutMe = () => {
                     </Box>
                 </FlexWrapper>
             </Container>
-
         </StyledAboutMe>
     )
 }
@@ -73,6 +72,7 @@ const AdditionalImg = styled.img`
 const Text = styled.p`
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
+    color: ${theme.colors.fontMain};
 `
 
 const Highlighting = styled.span`

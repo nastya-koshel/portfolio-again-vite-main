@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../../assets/images/icons-sprite.svg"
+import sprite from "../../assets/images/icons-sprite.svg"
 import {FlexWrapper} from "../FlexWrapper.tsx";
 
 export type ServicePropsType = {
@@ -12,28 +12,28 @@ export type ServicePropsType = {
 export const Service = (props: ServicePropsType) => {
     return (
         <StyledService>
-            <FlexWrapper >
+            <Box>
                 <FlexWrapper>
-                    <StyledRin color={props.color} img={props.img}>
+                    <StyledPin color={props.color} img={props.img}>
                         <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlinkHref={`${image}${props.img}`}></use>
+                            <use xlinkHref={`${sprite}${props.img}`}></use>
                         </svg>
-                    </StyledRin>
+                    </StyledPin>
                 </FlexWrapper>
                 <FlexWrapper direction="column" justifyContent="center" >
                     <p>{props.number}</p>
                     <p>{props.title}</p>
                 </FlexWrapper>
-            </FlexWrapper>
+            </Box>
         </StyledService>
     )
 }
 
 const StyledService = styled.div`
-    background-color: #eddbdb;
+
 `
 
-const StyledRin = styled.a<ServicePropsType>`
+const StyledPin = styled.a<ServicePropsType>`
     height: 120px;
     width: 120px;
     border-radius: 20px;
@@ -41,4 +41,10 @@ const StyledRin = styled.a<ServicePropsType>`
     display: flex;
     align-items: center;
     justify-content: center;
+`
+const Box = styled.div`
+    display: flex;
+    gap: 30px;
+    border: 1px solid red;
+    margin-bottom: 150px;
 `

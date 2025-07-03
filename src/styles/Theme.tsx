@@ -5,6 +5,6 @@ export const theme = {
 
         fontBlack: "#000000",
         fontWhite: "#ffffff",
-        fontText: "#494949",
+        fontMain: "#494949",
     }
 }

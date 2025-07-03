@@ -2,16 +2,18 @@ import styled from "styled-components";
 import {theme} from "../../styles/Theme.tsx";
 
 type ButtonPropsType = {
-    text: string;
+    text?: string;
+    fontColor?: string;
 }
 export const Button = (props:ButtonPropsType) => {
     return (
-        <StyledButton>{props.text}</StyledButton>
+        <StyledButton fontColor={props.fontColor}>{props.text}</StyledButton>
     )
 }
 
-const StyledButton = styled.button`
+const StyledButton = styled.button<ButtonPropsType>`
     background-color: ${theme.colors.secondary};
+    color: ${props => props.fontColor || "black"};
     border-radius: 50px;
     border: none;
     min-height: 54px;

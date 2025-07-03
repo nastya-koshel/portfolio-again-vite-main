@@ -53,7 +53,7 @@ const Name = styled.h1`
 
 const Text = styled.p`
     margin-bottom: 30px;
-    color: ${theme.colors.fontText};
+    color: ${theme.colors.fontMain};
 `
 
 const MainImg = styled.img`
