@@ -66,6 +66,7 @@ const NewButton = styled.button`
     border-radius: 50px;
     padding: 12px 40px;
     cursor: pointer;
+    font-size: 18px;
     
     text-align: right;
     color: ${theme.colors.secondary};
