@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import sprite from "../../assets/images/icons-sprite.svg"
 import {FlexWrapper} from "../FlexWrapper.tsx";
+import {theme} from "../../styles/Theme.tsx";
 
 export type ServicePropsType = {
     title?: string;
@@ -21,8 +22,8 @@ export const Service = (props: ServicePropsType) => {
                     </StyledPin>
                 </FlexWrapper>
                 <FlexWrapper direction="column" justifyContent="center" >
-                    <p>{props.number}</p>
-                    <p>{props.title}</p>
+                    <Number>{props.number}</Number>
+                    <Title>{props.title}</Title>
                 </FlexWrapper>
             </Box>
         </StyledService>
@@ -47,4 +48,14 @@ const Box = styled.div`
     gap: 30px;
     border: 1px solid red;
     margin-bottom: 150px;
+`
+ const Number = styled.p`
+     font-size: 20px;
+     line-height: 1.5;
+     color: ${theme.colors.fontMain};
+ `
+const Title = styled.p`
+    font-size: 20px;
+    line-height: 1.5;
+    color: ${theme.colors.fontBlack};
 `
