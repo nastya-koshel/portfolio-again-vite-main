@@ -46,7 +46,6 @@ const StyledPin = styled.a<ServicePropsType>`
 const Box = styled.div`
     display: flex;
     gap: 30px;
-    border: 1px solid red;
     margin-bottom: 150px;
 `
  const Number = styled.p`
