@@ -8,7 +8,6 @@ import Services2 from "../../../assets/images/Services-2.webp"
 import Services3 from "../../../assets/images/Services-3.webp"
 import {SectionSubtitle} from "../../../components/SectionSubtitle.tsx";
 import {Container} from "../../../components/Container.tsx";
-import {Button} from "../../../components/button/Button.tsx";
 
 export const Services = () => {
     return (
@@ -25,7 +24,6 @@ export const Services = () => {
                     <ServiceDescription title="UX/UI Design" text="Research, Design, Prototype, and Animation" img={Services1}/>
                     <ServiceDescription title="Front End Development" text="Implement UX design into live and user friendly " img={Services2}/>
                     <ServiceDescription title="Responsive Design" text="I build landing pages and responsive websites and web App" img={Services3}/>
-                    <Button text="See More" fontColor="white"/>
                 </FlexWrapper>
             </Container>
         </StyledServices>

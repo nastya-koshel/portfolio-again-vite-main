@@ -59,3 +59,4 @@ const Text = styled.p`
 const MainImg = styled.img`
     max-height: 390px;
 `
+

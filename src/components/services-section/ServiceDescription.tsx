@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {FlexWrapper} from "../FlexWrapper.tsx";
 import {theme} from "../../styles/Theme.tsx";
 import sprite from "../../assets/images/icons-sprite.svg";
 
@@ -72,7 +71,6 @@ const ButtonLearnMore = styled.a`
         margin-right: 25px;
     }
 `
-
 
 const Image = styled.img`
     border-radius: 20px;
