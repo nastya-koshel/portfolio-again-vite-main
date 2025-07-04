@@ -45,6 +45,7 @@ export const Portfolio = () => {
 
 const StyledPortfolio = styled.section`
     background-color: #c4e0ea;
+    margin-bottom: 85px;
 `
 
 const StyledPortfolioMenu = styled.menu`
