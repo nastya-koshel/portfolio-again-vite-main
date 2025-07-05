@@ -19,8 +19,14 @@ export const Header = () => {
 }
 
 export const StyledHeader = styled.header`
-    background-color: ${theme.colors.primary};
+    background-color: ${theme.colors.primaryWithoutTransparency};
     min-height: 100px;
     display: flex;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
 `

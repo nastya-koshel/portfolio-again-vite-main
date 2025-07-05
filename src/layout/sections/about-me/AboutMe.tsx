@@ -10,9 +10,9 @@ export const AboutMe = () => {
         <StyledAboutMe>
             <Container>
                 <FlexWrapper justifyContent="space-between" alignItems="center">
-                    <Frame>
-                        <AdditionalImg src={image} alt="My photo"/>
-                    </Frame>
+                    <PhotoWrapper>
+                        <Photo src={image} alt="My photo"/>
+                    </PhotoWrapper>
                     <Box>
                         <SectionTitle title="About Me" align="start"/>
                         <Text>Hello! My name is Rostam Sadiqi and I am a <Highlighting>UX/UI
@@ -54,18 +54,28 @@ const Box = styled.div`
     max-width: 570px;
 `
 
-const Frame = styled.div`
-    border: 3px solid ${theme.colors.secondary};
-    border-radius: 20px;
-    max-height: 420px;
- 
+const PhotoWrapper = styled.div`
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+        content: '';
+        border: 3px solid ${theme.colors.secondary};
+        border-radius: 20px;
+        width: 280px;
+        height: 420px;
+        
+        position: absolute;
+        left: -50px;
+        bottom: -40px;
+        z-index: -1;
+    }
 `
 
-const AdditionalImg = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    transform: translate(49px, -38px);
+const Photo = styled.img`
+    width: 280px;
+    height: 420px;
+    object-fit: cover;
 `
 
 const Text = styled.p`
