@@ -30,19 +30,6 @@ const StyledFooter = styled.footer`
     align-items: end;
 `
 
-type SocialMediaPropsType = {
-    sign?: string;
-    link?: string;
-}
-
-const SocialMedia = (props: SocialMediaPropsType) => {
-    return (
-        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlinkHref={`${signs}#${props.sign}`}><a href={`${props.link}`}></a></use>
-        </svg>
-    )
-}
-
 const Text = styled.p`
     color: ${theme.colors.fontBlack};
     padding: 10px;
@@ -54,4 +41,21 @@ const Box = styled.div`
     padding: 10px;
     width: 169px;
     height: 44px;
+`
+
+type SocialMediaPropsType = {
+    sign?: string;
+    link?: string;
+}
+
+const SocialMedia = (props: SocialMediaPropsType) => {
+    return (
+        <StyledSocialMedia width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlinkHref={`${signs}#${props.sign}`}><a href={`${props.link}`}></a></use>
+        </StyledSocialMedia>
+    )
+}
+
+const StyledSocialMedia = styled.svg `
+    cursor: pointer;
 `

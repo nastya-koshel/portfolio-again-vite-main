@@ -14,7 +14,7 @@ export const ServiceDescription = (props: ServiceDescriptionPropsType) => {
             <Box>
                 <Title>{props.title}</Title>
                 <Description>{props.text}</Description>
-                <ButtonLearnMore href="#">
+                <ButtonLearnMore>
                     <span>Learn More</span>
                     <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <use xlinkHref={`${sprite}#arrow`}></use>
@@ -59,16 +59,23 @@ const Description = styled.h2`
     margin-bottom: 70px;
 `
 
-const ButtonLearnMore = styled.a`
+const ButtonLearnMore = styled.button`
+    border: none;
+    background: none;
+    align-self: flex-start;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.5;
     margin-right: 25px;
     display: flex;
     align-items: center;
-    
-    span {
-        margin-right: 25px;
+    gap: 25px;
+   
+    &:hover {
+        // color: ${theme.colors.secondary};
+        font-size: 120%;
+        font-weight: bold;
     }
 `
 

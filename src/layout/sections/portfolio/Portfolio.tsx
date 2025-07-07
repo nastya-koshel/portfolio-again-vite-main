@@ -5,9 +5,10 @@ import Portfolio1 from "../../../assets/images/Portfolio-1.webp"
 import Portfolio2 from "../../../assets/images/Portfolio-2.webp"
 import Portfolio3 from "../../../assets/images/Portfolio-3.webp"
 import Portfolio4 from "../../../assets/images/Portfolio-4.webp"
-import {Button} from "../../../components/button/Button.tsx";
 import {SectionSubtitle} from "../../../components/SectionSubtitle.tsx";
 import {Container} from "../../../components/Container.tsx";
+import {theme} from "../../../styles/Theme.tsx";
+import {PortfolioBtn} from "../../../components/button/PortfolioBtn.tsx";
 
 export const Portfolio = () => {
     return (
@@ -36,7 +37,7 @@ export const Portfolio = () => {
                     <Image src={Portfolio4} alt="My fourst web-site"></Image>
                 </Box>
                 <FlexWrapper justifyContent="center">
-                    <PortfolioBtn text="See More" fontColor="white"/>
+                    <PortfolioBtn text="See More"/>
                 </FlexWrapper>
             </Container>
         </StyledPortfolio>
@@ -54,7 +55,13 @@ const StyledPortfolioMenu = styled.menu`
     li {
         list-style: none;
     };
-    
+    a:link, a:visited {
+        color: ${theme.colors.fontBlack};
+    }
+    a:hover {
+        color: ${theme.colors.secondary};
+        text-decoration: underline;
+    }
     margin-top: 75px;
     margin-bottom: 95px;
 `
@@ -69,8 +76,4 @@ const Box = styled.div`
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 95px;
-`
-
-const PortfolioBtn = styled(Button)`
-        width: 300px;
 `

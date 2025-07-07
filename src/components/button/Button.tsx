@@ -3,17 +3,16 @@ import {theme} from "../../styles/Theme.tsx";
 
 type ButtonPropsType = {
     text?: string;
-    fontColor?: string;
 }
 export const Button = (props:ButtonPropsType) => {
     return (
-        <StyledButton fontColor={props.fontColor}>{props.text}</StyledButton>
+        <StyledButton>{props.text}</StyledButton>
     )
 }
 
 const StyledButton = styled.button<ButtonPropsType>`
     background-color: ${theme.colors.secondary};
-    color: ${props => props.fontColor || "black"};
+    color: ${theme.colors.fontBlack};
     border-radius: 50px;
     border: none;
     min-height: 54px;
