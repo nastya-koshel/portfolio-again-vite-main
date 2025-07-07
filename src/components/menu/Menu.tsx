@@ -7,21 +7,21 @@ export const Menu = () => {
     return (
         <StyledMenu>
             <FlexWrapper alignItems="center" justifyContent="space-between">
-                <li>
+                <MenuItem>
                     <a href="">Home</a>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <a href="">About</a>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <a href="">Service</a>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <a href="">My work</a>
-                </li>
-                <li>
+                </MenuItem>
+                <MenuItem>
                     <a href=""><Button text="Resume"/></a>
-                </li>
+                </MenuItem>
             </FlexWrapper>
         </StyledMenu>
     )
@@ -43,4 +43,8 @@ const StyledMenu = styled.ul`
     
     min-width: 500px;
     font-weight: 500;
+    z-index: 999999;
+`
+
+const MenuItem = styled.li`
 `

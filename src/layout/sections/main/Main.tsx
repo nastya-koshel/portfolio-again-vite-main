@@ -38,12 +38,37 @@ const Box = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 475px;
-    z-index: 999;
 `
 
 const Greeting = styled.p`
     color: ${theme.colors.secondary};
     font-size: 30px;
+
+
+    &::before {
+        content: "";
+        border-radius: 50%;
+        border: 20px solid ${theme.colors.secondary};
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: -96px;
+        top: 142px;
+        z-index: -999;
+    }
+
+    &:after {
+        content: "";
+        border-radius: 50%;
+        border: 20px solid ${theme.colors.secondary};
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: -80px;
+        top: -20px;
+        z-index: 999;
+    }
+    
 `
 const Name = styled.h1`
     font-family: Poppins, sans-serif;
@@ -58,6 +83,6 @@ const Text = styled.p`
 
 const MainImg = styled.img`
     max-height: 390px;
-    z-index: 999;
+    z-index: 99;
 `
 
