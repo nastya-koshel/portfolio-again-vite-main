@@ -83,6 +83,6 @@ const Text = styled.p`
 
 const MainImg = styled.img`
     max-height: 390px;
-    z-index: 99;
+    z-index: 999;
 `
 
