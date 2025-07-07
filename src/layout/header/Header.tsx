@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import {Menu} from "../../components/menu/Menu.tsx";
+import {HeaderMenu} from "../../components/menu/HeaderMenu.tsx";
 import {Logo} from "../../components/logo/Logo.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {theme} from "../../styles/Theme.tsx";
 import {Container} from "../../components/Container.tsx";
+import {MobileMenu} from "../../components/menu/MobileMenu.tsx";
 
 export const Header = () => {
   return (
@@ -11,7 +12,8 @@ export const Header = () => {
           <Container>
               <FlexWrapper justifyContent="space-between" alignItems="center">
                   <Logo/>
-                  <Menu />
+                  <HeaderMenu />
+                  <MobileMenu />
               </FlexWrapper>
           </Container>
       </StyledHeader>
@@ -26,5 +28,5 @@ export const StyledHeader = styled.header`
 
     position: sticky;
     top: 0;
-    z-index: 999;
+    //z-index: 999;
 `

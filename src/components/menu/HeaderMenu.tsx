@@ -1,12 +1,11 @@
 import {Button} from "../button/Button.tsx";
 import styled from "styled-components";
-import {FlexWrapper} from "../FlexWrapper.tsx";
 import {theme} from "../../styles/Theme.tsx";
 
-export const Menu = () => {
+export const HeaderMenu = () => {
     return (
-        <StyledMenu>
-            <FlexWrapper alignItems="center" justifyContent="space-between">
+        <StyledHeaderMenu>
+            <ul>
                 <MenuItem>
                     <a href="">Home</a>
                 </MenuItem>
@@ -22,29 +21,34 @@ export const Menu = () => {
                 <MenuItem>
                     <a href=""><Button text="Resume"/></a>
                 </MenuItem>
-            </FlexWrapper>
-        </StyledMenu>
+            </ul>
+        </StyledHeaderMenu>
     )
 }
 
-const StyledMenu = styled.ul`
+const StyledHeaderMenu = styled.nav`
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
+    
     li {
         list-style: none;
     };
 
-    a:link, a:visited {
+    a {
         color: ${theme.colors.fontBlack};
     }
     
-    a:hover {
-        color: ${theme.colors.secondary};
-        cursor: pointer;
-    }
-    
     min-width: 500px;
-    font-weight: 500;
     z-index: 999999;
 `
 
 const MenuItem = styled.li`
+    
 `

@@ -45,29 +45,29 @@ const Greeting = styled.p`
     font-size: 30px;
 
 
-    &::before {
-        content: "";
-        border-radius: 50%;
-        border: 20px solid ${theme.colors.secondary};
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        left: -96px;
-        top: 142px;
-        z-index: -999;
-    }
-
-    &:after {
-        content: "";
-        border-radius: 50%;
-        border: 20px solid ${theme.colors.secondary};
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        right: -80px;
-        top: -20px;
-        z-index: 999;
-    }
+    // &::before {
+    //     content: "";
+    //     border-radius: 50%;
+    //     border: 20px solid ${theme.colors.secondary};
+    //     width: 200px;
+    //     height: 200px;
+    //     position: absolute;
+    //     left: -96px;
+    //     top: 142px;
+    //     z-index: -999;
+    // }
+    //
+    // &:after {
+    //     content: "";
+    //     border-radius: 50%;
+    //     border: 20px solid ${theme.colors.secondary};
+    //     width: 200px;
+    //     height: 200px;
+    //     position: absolute;
+    //     right: -80px;
+    //     top: -20px;
+    //     z-index: 999;
+    // }
     
 `
 const Name = styled.h1`
@@ -83,6 +83,6 @@ const Text = styled.p`
 
 const MainImg = styled.img`
     max-height: 390px;
-    z-index: 999;
+    //z-index: 999;
 `
 
