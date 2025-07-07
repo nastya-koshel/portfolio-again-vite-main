@@ -24,9 +24,32 @@ export const StyledHeader = styled.header`
     display: flex;
     align-items: center;
 
-    position: fixed;
+    position: sticky;
     top: 0;
-    right: 0;
-    left: 0;
     z-index: 99;
+    
+    &::before {
+        content: "";
+        border-radius: 50%;
+        border: 20px solid ${theme.colors.secondary};
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: -96px;
+        top: 142px;
+        z-index: -1;
+    }
+    
+    &:after {
+        content: "";
+        border-radius: 50%;
+        border: 20px solid ${theme.colors.secondary};
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: -80px;
+        top: -20px;
+        z-index: -10;
+    }
+    
 `

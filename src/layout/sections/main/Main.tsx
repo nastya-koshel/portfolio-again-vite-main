@@ -28,16 +28,17 @@ export const Main = () => {
 
 const StyledMain = styled.main`
     background-color: ${theme.colors.primary};
-    min-height: 630px;
+    padding-top: 50px;
+    padding-bottom: 90px;
     display: flex;
     align-items: center;
-    padding-top: 100px;
 `
 
 const Box = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 475px;
+    z-index: 999;
 `
 
 const Greeting = styled.p`
@@ -57,5 +58,6 @@ const Text = styled.p`
 
 const MainImg = styled.img`
     max-height: 390px;
+    z-index: 999;
 `
 
