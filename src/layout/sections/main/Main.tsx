@@ -28,12 +28,10 @@ export const Main = () => {
 
 const StyledMain = styled.main`
     background-color: ${theme.colors.primary};
-    min-height: 530px;
+    min-height: 630px;
     display: flex;
     align-items: center;
-    
     padding-top: 100px;
-    margin-bottom: 140px;
 `
 
 const Box = styled.div`
