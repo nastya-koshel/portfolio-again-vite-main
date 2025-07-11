@@ -28,5 +28,5 @@ export const StyledHeader = styled.header`
 
     position: sticky;
     top: 0;
-    //z-index: 999;
+    z-index: 999;
 `

@@ -71,11 +71,18 @@ const ButtonLearnMore = styled.button`
     display: flex;
     align-items: center;
     gap: 25px;
+    
+    svg {
+        fill: black;
+    }
    
     &:hover {
-        // color: ${theme.colors.secondary};
-        font-size: 120%;
-        font-weight: bold;
+        transform: scale(1.20);  ;
+        color: ${theme.colors.secondary};
+        
+        svg {
+            fill: ${theme.colors.secondary};
+        }
     }
 `
 

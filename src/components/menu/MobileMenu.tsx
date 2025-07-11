@@ -55,6 +55,7 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
         justify-content: center;
         align-items: center;
         background: rgba(231, 249, 239, 0.8);
+        
     `}
     ul {
         display: flex;

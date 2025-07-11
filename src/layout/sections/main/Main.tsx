@@ -26,12 +26,38 @@ export const Main = () => {
     )
 }
 
-const StyledMain = styled.main`
+const StyledMain = styled.section`
     background-color: ${theme.colors.primary};
     padding-top: 50px;
     padding-bottom: 90px;
     display: flex;
     align-items: center;
+     
+    div div {
+        &::before {
+            content: "";
+            border-radius: 50%;
+            border: 20px solid ${theme.colors.secondary};
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: -96px;
+            top: 142px;
+            z-index: -999;
+        }
+
+        &:after {
+            content: "";
+            border-radius: 50%;
+            border: 20px solid ${theme.colors.secondary};
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: -80px;
+            top: -20px;
+            z-index: 999;
+        }
+    }
 `
 
 const Box = styled.div`
@@ -43,32 +69,6 @@ const Box = styled.div`
 const Greeting = styled.p`
     color: ${theme.colors.secondary};
     font-size: 30px;
-
-
-    // &::before {
-    //     content: "";
-    //     border-radius: 50%;
-    //     border: 20px solid ${theme.colors.secondary};
-    //     width: 200px;
-    //     height: 200px;
-    //     position: absolute;
-    //     left: -96px;
-    //     top: 142px;
-    //     z-index: -999;
-    // }
-    //
-    // &:after {
-    //     content: "";
-    //     border-radius: 50%;
-    //     border: 20px solid ${theme.colors.secondary};
-    //     width: 200px;
-    //     height: 200px;
-    //     position: absolute;
-    //     right: -80px;
-    //     top: -20px;
-    //     z-index: 999;
-    // }
-    
 `
 const Name = styled.h1`
     font-family: Poppins, sans-serif;

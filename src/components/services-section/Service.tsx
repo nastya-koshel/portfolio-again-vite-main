@@ -8,30 +8,31 @@ export type ServicePropsType = {
     number?: string;
     color?: string;
     img?: string;
+    href?: string;
 }
 
 export const Service = (props: ServicePropsType) => {
     return (
         <StyledService>
-            <Box>
-                <FlexWrapper>
-                    <StyledPin color={props.color} img={props.img}>
-                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <use xlinkHref={`${sprite}${props.img}`}></use>
-                        </svg>
-                    </StyledPin>
-                </FlexWrapper>
-                <FlexWrapper direction="column" justifyContent="center" >
-                    <Number>{props.number}</Number>
-                    <Title>{props.title}</Title>
-                </FlexWrapper>
-            </Box>
+            <StyledPin color={props.color} img={props.img} href={props.href}>
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlinkHref={`${sprite}${props.img}`}></use>
+                </svg>
+            </StyledPin>
+            <FlexWrapper direction="column" justifyContent="center">
+                <Number>{props.number}</Number>
+                <Title>{props.title}</Title>
+            </FlexWrapper>
         </StyledService>
     )
 }
 
-const StyledService = styled.div`
+const StyledService = styled.li`
+    list-style: none;
 
+    display: flex;
+    gap: 30px;
+    margin-bottom: 150px;
 `
 
 const StyledPin = styled.a<ServicePropsType>`
@@ -42,17 +43,14 @@ const StyledPin = styled.a<ServicePropsType>`
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    
 `
-const Box = styled.div`
-    display: flex;
-    gap: 30px;
-    margin-bottom: 150px;
+const Number = styled.p`
+    font-size: 20px;
+    line-height: 1.5;
+    color: ${theme.colors.fontMain};
 `
- const Number = styled.p`
-     font-size: 20px;
-     line-height: 1.5;
-     color: ${theme.colors.fontMain};
- `
 const Title = styled.p`
     font-size: 20px;
     line-height: 1.5;
